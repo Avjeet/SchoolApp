@@ -31,6 +31,15 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
 
+        val fragment = DashboardFragment()
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
+        fragmentTransaction.add(R.id.content_ll,fragment)
+        fragmentTransaction.commit()
+
+
+
         nav_view.setNavigationItemSelectedListener(this)
     }
 

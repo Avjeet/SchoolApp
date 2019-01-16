@@ -59,5 +59,9 @@ class DashboardFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+        @JvmStatic
+        fun newInstance(){
+            DashboardFragment().apply {  }
+        }
     }
 }
