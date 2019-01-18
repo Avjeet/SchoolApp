@@ -14,4 +14,9 @@
     <string name="need_to_pay_fees">Need to pay fees?</string>
     <string name="get_instant_loan">Get Instant Loan</string>
     <string name="add_money">Add Money</string>
+    <string name="school_location">Select Your School\'s Location</string>
+    <string name="select_school">Select Your School</string>
+    <string name="proceed">Proceed</string>
+    <string name="school_frg_text_email">Didn\'t find your institute? Email institute name and contact person details at education@paytm.com
+    </string>
 </resources>

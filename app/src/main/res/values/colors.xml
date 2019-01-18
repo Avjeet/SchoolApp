@@ -7,4 +7,5 @@
     <color name="blue_light">#353e6e</color>
     <color name="text_green">#02b46a</color>
     <color name="text_blue">#2387d9</color>
+    <color name="black">#000000</color>
 </resources>

@@ -1,11 +1,14 @@
 package com.labs.daphnis.schoolapp
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import kotlinx.android.synthetic.main.fragment_dashboard.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -37,7 +40,23 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dashboard, container, false)
+        val view =  inflater.inflate(R.layout.fragment_dashboard, container, false)
+
+        grid_btn?.getChildAt(0)?.setOnClickListener{
+            startActivity(Intent(activity,SchoolFeesActivity::class.java))
+        }
+//        school_btn?.setOnClickListener {
+//
+//            startActivity(Intent(activity,SchoolFeesActivity::class.java))
+//        }
+
+        val btn : LinearLayout = view.findViewById(R.id.school_btn)
+
+        btn.setOnClickListener {
+            startActivity(Intent(activity,SchoolFeesActivity::class.java))
+        }
+
+        return view
     }
 
 
