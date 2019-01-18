@@ -27,7 +27,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val toggle = ActionBarDrawerToggle(
             this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
         )
-        toggle.drawerArrowDrawable.color = ContextCompat.getColor(this,R.color.foreground_material_light)
+        //toggle.drawerArrowDrawable.color = ContextCompat.getColor(this,R.color.white)
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
 

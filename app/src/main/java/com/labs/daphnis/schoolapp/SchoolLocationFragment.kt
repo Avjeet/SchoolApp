@@ -1,6 +1,8 @@
 package com.labs.daphnis.schoolapp
 
 
+import android.app.ActivityOptions
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -14,8 +16,10 @@ import android.text.style.UnderlineSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.fragment_school_location.*
 
 
 /**
@@ -45,6 +49,7 @@ class SchoolLocationFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_school_location, container, false)
 
         val emailTv = view.findViewById<TextView>(R.id.email_tv)
+        val proceedBtn = view.findViewById<Button>(R.id.proceed)
 
 
         val ss = SpannableString(resources.getString(R.string.school_frg_text_email))
@@ -67,6 +72,9 @@ class SchoolLocationFragment : Fragment() {
         emailTv.movementMethod = LinkMovementMethod.getInstance()
         emailTv.highlightColor = Color.TRANSPARENT
 
+        proceedBtn?.setOnClickListener {
+            startActivity(Intent(activity,DetailActivity::class.java))
+        }
         return view
     }
 

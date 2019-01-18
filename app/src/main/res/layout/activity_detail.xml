@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".DetailActivity"
+            android:layout_marginTop="@dimen/length_10dp">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/edit_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/school_location"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_20"
+                        android:textColor="@color/black"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginTop="@dimen/length_20dp"
+                        android:layout_marginStart="@dimen/length_20dp"
+                        android:layout_marginEnd="@dimen/length_20dp"
+                        android:layout_marginBottom="@dimen/length_10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/edit_school"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/select_school"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_20"
+                        android:textColor="@color/black"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginTop="@dimen/length_10dp"
+                        android:layout_marginStart="@dimen/length_20dp"
+                        android:layout_marginEnd="@dimen/length_20dp"
+                        android:layout_marginBottom="@dimen/length_10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/edit_enroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enrollment_number"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_20"
+                        android:textColor="@color/black"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginTop="@dimen/length_10dp"
+                        android:layout_marginStart="@dimen/length_20dp"
+                        android:layout_marginEnd="@dimen/length_20dp"
+                        android:layout_marginBottom="@dimen/length_10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/edit_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/student_name"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_20"
+                        android:focusable="true"
+                        android:textColor="@color/dark_grey"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginTop="@dimen/length_10dp"
+                        android:layout_marginStart="@dimen/length_20dp"
+                        android:layout_marginEnd="@dimen/length_20dp"
+                        android:layout_marginBottom="@dimen/length_10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/edit_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/text_class"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_20"
+                        android:focusable="true"
+                        android:textColor="@color/dark_grey"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginTop="@dimen/length_10dp"
+                        android:layout_marginStart="@dimen/length_20dp"
+                        android:layout_marginEnd="@dimen/length_20dp"
+                        android:layout_marginBottom="@dimen/length_10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/edit_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/section"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_20"
+                        android:focusable="true"
+                        android:textColor="@color/dark_grey"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginTop="@dimen/length_10dp"
+                        android:layout_marginStart="@dimen/length_20dp"
+                        android:layout_marginEnd="@dimen/length_20dp"
+                        android:layout_marginBottom="@dimen/length_10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/edit_fees_due"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/fees_due"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_20"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColor="@color/dark_grey"
+                        android:layout_marginTop="@dimen/length_10dp"
+                        android:layout_marginStart="@dimen/length_20dp"
+                        android:layout_marginEnd="@dimen/length_20dp"
+                        android:layout_marginBottom="@dimen/length_10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                    android:id="@+id/proceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_btn_blue_accent"
+                    android:text="@string/proceed"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/length_20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
