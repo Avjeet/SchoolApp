@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 
@@ -51,6 +52,11 @@ class DashboardFragment : Fragment() {
 //        }
 
         val btn : LinearLayout = view.findViewById(R.id.school_btn)
+        val add_money_btn : Button = view.findViewById(R.id.btn_add_money)
+
+        add_money_btn.setOnClickListener {
+            startActivity(Intent(activity,AddMoneyActivity::class.java))
+        }
 
         btn.setOnClickListener {
             startActivity(Intent(activity,SchoolFeesActivity::class.java))

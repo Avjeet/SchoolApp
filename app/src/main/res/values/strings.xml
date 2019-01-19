@@ -27,4 +27,7 @@
     <string name="fees_due">Fees Due</string>
     <string name="school_fees">School Fees</string>
     <string name="proceed_to_pay">Proceed to Pay</string>
+    <string name="pay_using">Pay Using</string>
+    <string name="payment_to_be_paid">Payment to be Paid</string>
+    <string name="fund_balance_text">Your Current fund box balance is</string>
 </resources>

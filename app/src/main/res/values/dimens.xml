@@ -11,5 +11,7 @@
     <dimen name="length_10dp">10dp</dimen>
     <dimen name="length_20dp">20dp</dimen>
     <dimen name="length_30dp">30dp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="length_40dp">40dp</dimen>
 
 </resources>

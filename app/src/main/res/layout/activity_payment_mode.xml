@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".PaymentModeActivity"
+        android:orientation="vertical">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_to_be_paid"
+            android:textSize="@dimen/text_18sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 4900"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/text_green"
+            android:layout_marginTop="@dimen/length_20dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_using"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"/>
+
+    <View android:layout_width="@dimen/length_10dp" android:layout_height="1dp"
+          android:background="@color/colorAccent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="5dp"
+    android:alpha="0.3"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="20dp">
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:src="@drawable/netflix_ad"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_back_blue"
+        >
+        </ImageView>
+
+
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:src="@drawable/netflix_ad"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_back_blue"
+        >
+        </ImageView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

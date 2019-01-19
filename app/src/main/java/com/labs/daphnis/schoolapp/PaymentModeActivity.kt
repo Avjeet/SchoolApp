@@ -1,23 +1,17 @@
 package com.labs.daphnis.schoolapp
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_payment_sumary.*
 
-class PaymentSumaryActivity : AppCompatActivity() {
+class PaymentModeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_payment_sumary)
+        setContentView(R.layout.activity_payment_mode)
 
+        supportActionBar?.title= getString(R.string.school_fees)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = getString(R.string.school_fees)
-
-        proceed.setOnClickListener {
-            startActivity(Intent(this@PaymentSumaryActivity,PaymentModeActivity::class.java))
-        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {

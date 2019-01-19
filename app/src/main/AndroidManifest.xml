@@ -30,6 +30,10 @@
                 android:parentActivityName=".SchoolFeesActivity"/>
         <activity android:name=".PaymentSumaryActivity">
         </activity>
+        <activity android:name=".PaymentModeActivity">
+        </activity>
+        <activity android:name=".AddMoneyActivity">
+        </activity>
     </application>
 
 </manifest>
