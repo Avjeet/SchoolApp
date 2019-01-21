@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+android:padding="20dp">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="WECHE000"
+                  android:textColor="@color/black"
+                  android:textSize="16sp"
+                  android:id="@+id/promo_code"
+
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Rs. 100 COupon is appplied and less in your invoice"
+        android:maxWidth="200dp"
+                  android:id="@+id/promo_code_text"
+        android:textColor="@color/text_green"
+        android:layout_marginTop="@dimen/length_10dp"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/applied"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:textColor="@color/black"
+              android:textSize="16sp"
+              android:id="@+id/promo_code_status"
+              />
+</RelativeLayout>

@@ -13,5 +13,6 @@
     <dimen name="length_30dp">30dp</dimen>
     <dimen name="text_18sp">18sp</dimen>
     <dimen name="length_40dp">40dp</dimen>
+    <dimen name="add_money_left_margin">20dp</dimen>
 
 </resources>

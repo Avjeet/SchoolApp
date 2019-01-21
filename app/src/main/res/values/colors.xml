@@ -10,4 +10,5 @@
     <color name="black">#000000</color>
     <color name="dark_grey">#bdbdbd</color>
     <color name="grey_background">#eeeeee</color>
+    <color name="blue_vlight">#e1f5fe</color>
 </resources>

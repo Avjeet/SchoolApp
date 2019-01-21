@@ -3,8 +3,8 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Avjeet Singh</string>
+    <string name="nav_header_subtitle">+91987898657</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -30,4 +30,5 @@
     <string name="pay_using">Pay Using</string>
     <string name="payment_to_be_paid">Payment to be Paid</string>
     <string name="fund_balance_text">Your Current fund box balance is</string>
+    <string name="applied">Applied</string>
 </resources>
