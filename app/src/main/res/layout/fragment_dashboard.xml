@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3"
                 app:layout_constraintTop_toBottomOf="@+id/tv_acc_bal"
-                android:text="Your fund box balance"
+                android:text="@string/your_fund_box_balance"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/tv_acc_bal"
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/guideline"
-                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_begin="158dp"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.50"/>
 
@@ -66,7 +66,7 @@
                 android:drawablePadding="10dp"
                 android:textAllCaps="false"
                 android:minHeight="0dp"
-                android:textSize="12sp"
+                android:textSize="@dimen/grid_text"
                 android:gravity="start|center_vertical"
                 app:layout_constraintStart_toStartOf="@+id/btn_view_stmnt"
                 app:layout_constraintEnd_toEndOf="@+id/btn_view_stmnt"
@@ -91,7 +91,7 @@
                 android:drawableStart="@drawable/ic_notifications_black_24dp"
                 android:layout_marginTop="8dp"
                 android:textColor="@android:color/white"
-                android:textSize="12sp"
+                android:textSize="@dimen/grid_text"
                 android:paddingEnd="25dp"
                 android:paddingStart="10dp"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
@@ -150,18 +150,22 @@
                 android:orientation="vertical"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:gravity="center">
+                android:gravity="center"
+                android:padding="@dimen/padding_grid">
 
             <ImageView
+                    android:layout_weight="2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search_black_24dp"/>
+                    android:layout_height="0dp"
+                    android:src="@drawable/school_01"/>
 
             <TextView
+                    android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="School"
-                    android:textSize="14sp"/>
+                    android:text="@string/school"
+                    android:gravity="center"
+                    android:textSize="@dimen/grid_text"/>
         </LinearLayout>
 
         <LinearLayout
@@ -171,18 +175,21 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:gravity="center"
-        >
+                android:padding="@dimen/padding_grid">
 
             <ImageView
+                    android:layout_weight="2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search_black_24dp"/>
+                    android:layout_height="0dp"
+                    android:src="@drawable/college_01"/>
 
             <TextView
+                    android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="College"
-                    android:textSize="14sp"/>
+                    android:gravity="center"
+                    android:textSize="@dimen/grid_text"/>
         </LinearLayout>
 
         <LinearLayout
@@ -192,18 +199,21 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:gravity="center"
-        >
+                android:padding="@dimen/padding_grid">
 
             <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search_black_24dp"/>
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/coaching_01"/>
 
             <TextView
+                    android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Coaching"
-                    android:textSize="14sp"/>
+                    android:gravity="center"
+                    android:textSize="@dimen/grid_text"/>
         </LinearLayout>
 
         <LinearLayout
@@ -213,18 +223,21 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:gravity="center"
-        >
+                android:padding="@dimen/padding_grid">
 
             <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search_black_24dp"/>
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/tution_01"/>
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:text="Tutors"/>
+                    android:textSize="@dimen/grid_text"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tutors"/>
         </LinearLayout>
 
 
@@ -235,18 +248,20 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:gravity="center"
-        >
+                android:padding="@dimen/padding_grid">
 
             <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search_black_24dp"/>
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/searchtutor_01"/>
 
             <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:text="Search\nTutors"/>
+                    android:layout_height="0dp"
+                    android:textSize="@dimen/grid_text"
+                    android:layout_weight="1"
+                    android:text="@string/search_ntutors"/>
         </LinearLayout>
 
         <LinearLayout
@@ -256,18 +271,20 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:gravity="center"
-        >
+                android:padding="@dimen/padding_grid">
 
             <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search_black_24dp"/>
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/student_insurance_01"/>
 
             <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:text="Student\nInsurance"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/grid_text"
+                    android:layout_weight="1"
                     android:gravity="center"/>
         </LinearLayout>
 
@@ -278,18 +295,20 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:gravity="center"
-        >
+                android:padding="@dimen/padding_grid">
 
             <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search_black_24dp"/>
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/educationloan_01"/>
 
             <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
+                    android:layout_height="0dp"
+                    android:textSize="@dimen/grid_text"
                     android:text="Education\nLoan"
+                    android:layout_weight="1"
                     android:gravity="center"/>
         </LinearLayout>
 
@@ -300,23 +319,27 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:gravity="center"
-        >
+                android:padding="@dimen/padding_grid">
 
             <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search_black_24dp"/>
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/carrer_01"/>
 
             <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:text="Career\nConsultancy"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/grid_text"
+                    android:layout_weight="1"
                     android:gravity="center"/>
         </LinearLayout>
 
 
     </com.labs.daphnis.schoolapp.Util.DividerGridLayout>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/length_1dp"
+    android:background="@color/grid_sep_color_grey"/>
 
     <ImageView
             android:layout_width="match_parent"

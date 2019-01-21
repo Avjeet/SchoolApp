@@ -5,9 +5,11 @@ import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
 import android.view.View
 import android.widget.GridLayout
+import com.labs.daphnis.schoolapp.R
 
 /**
  * Created by Avjeet on 16-01-2019.
@@ -49,7 +51,7 @@ class DividerGridLayout @JvmOverloads constructor(context: Context, attrs: Attri
 
     private fun init() {
         vPaint = Paint(Paint.ANTI_ALIAS_FLAG)
-        vPaint!!.color = Color.parseColor("#e5e5e5")
+        vPaint!!.color = ContextCompat.getColor(context,R.color.grid_sep_color_grey)
         vPaint!!.style = Paint.Style.STROKE
         vPaint!!.strokeWidth = 1.0f
         hPaint = Paint(vPaint)

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+          android:icon="@drawable/home_01"
+          android:title="Home"/>
+    <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_01"
+            android:title="Profile"/>
+    <item
+            android:id="@+id/nav_fund_box"
+            android:icon="@drawable/fund_box_01"
+            android:title="Fund Box"/>
+    <item
+            android:id="@+id/nav_commerce"
+            android:icon="@drawable/e_commerce_01"
+            android:title="E Commerce"/>
+</menu>

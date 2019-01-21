@@ -14,5 +14,8 @@
     <dimen name="text_18sp">18sp</dimen>
     <dimen name="length_40dp">40dp</dimen>
     <dimen name="add_money_left_margin">20dp</dimen>
+    <dimen name="padding_grid">10dp</dimen>
+    <dimen name="length_1dp">1dp</dimen>
+    <dimen name="grid_text">12sp</dimen>
 
 </resources>

@@ -31,4 +31,15 @@
     <string name="payment_to_be_paid">Payment to be Paid</string>
     <string name="fund_balance_text">Your Current fund box balance is</string>
     <string name="applied">Applied</string>
+    <string name="school">School</string>
+    <string name="tutors">Tutors</string>
+    <string name="search_ntutors">Search\nTutors</string>
+    <string name="your_fund_box_balance">Your fund box balance</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="attendance">Attendance</string>
+    <string name="blog">Blog</string>
+    <string name="chapter_wise_revision">Chapter Wise Revision</string>
+    <string name="student_queries">Student Queries</string>
+    <string name="photo_gallery">Photo Gallery</string>
+
 </resources>

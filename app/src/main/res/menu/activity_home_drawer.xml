@@ -7,33 +7,33 @@
         <item
                 android:id="@+id/nav_dashboard"
                 android:icon="@drawable/ic_menu_camera"
-                android:title="Dashboard"/>
+                android:title="@string/dashboard"/>
         <item
                 android:id="@+id/nav_Attendance"
                 android:icon="@drawable/ic_menu_gallery"
-                android:title="Attendance"/>
+                android:title="@string/attendance"/>
         <item
                 android:id="@+id/nav_blog"
                 android:icon="@drawable/ic_menu_slideshow"
-                android:title="Blog"/>
+                android:title="@string/blog"/>
         <item
                 android:id="@+id/nav_revision"
                 android:icon="@drawable/ic_menu_manage"
-                android:title="Chapter WIse Revision"/>
+                android:title="@string/chapter_wise_revision"/>
 
         <item
                 android:id="@+id/nav_queries"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Student Queries"/>
+                android:title="@string/student_queries"/>
         <item
                 android:id="@+id/nav_gallery"
                 android:icon="@drawable/ic_menu_slideshow"
-                android:title="Photo Gallery"/>
+                android:title="@string/photo_gallery"/>
 
         <item
                 android:id="@+id/nav_result"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Photo Gallery"/>
+                android:title="Exam Result"/>
 
         <item
                 android:id="@+id/nav_Other"
