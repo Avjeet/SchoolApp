@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".PaymentModeActivity"
+        tools:context=".SchoolFees.PaymentModeActivity"
         android:orientation="vertical">
 
     <TextView
@@ -19,7 +19,7 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$ 4900"
+            android:text="₹ 4900"
             android:textSize="36sp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"

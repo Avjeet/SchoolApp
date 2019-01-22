@@ -13,6 +13,9 @@ class AddMoneyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_money)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = getString(R.string.view_statement)
+
         seek_bar.onSeekChangeListener = object : OnSeekChangeListener {
             override fun onStartTrackingTouch(seekBar: IndicatorSeekBar?) {
                // dp nothing

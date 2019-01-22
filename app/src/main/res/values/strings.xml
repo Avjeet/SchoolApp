@@ -41,5 +41,6 @@
     <string name="chapter_wise_revision">Chapter Wise Revision</string>
     <string name="student_queries">Student Queries</string>
     <string name="photo_gallery">Photo Gallery</string>
+    <string name="view_statement">View Statement</string>
 
 </resources>

@@ -17,5 +17,7 @@
     <dimen name="padding_grid">10dp</dimen>
     <dimen name="length_1dp">1dp</dimen>
     <dimen name="grid_text">12sp</dimen>
+    <dimen name="pad_top_item_stmnt">20dp</dimen>
+    <dimen name="pad_right_smnt">10dp</dimen>
 
 </resources>

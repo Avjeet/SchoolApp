@@ -11,26 +11,26 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ViewStatement.ViewStatementActivity">
         </activity>
         <activity
                 android:name=".HomeActivity"
-
-                android:theme="@style/AppTheme.NoActionBar">
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".SchoolFeesActivity">
+        <activity android:name=".SchoolFees.SchoolFeesActivity">
         </activity>
         <activity
-                android:name=".DetailActivity"
-                android:parentActivityName=".SchoolFeesActivity"/>
-        <activity android:name=".PaymentSumaryActivity">
+                android:name=".SchoolFees.DetailActivity"
+                android:parentActivityName=".SchoolFees.SchoolFeesActivity"/>
+        <activity android:name=".SchoolFees.PaymentSumaryActivity">
         </activity>
-        <activity android:name=".PaymentModeActivity">
+        <activity android:name=".SchoolFees.PaymentModeActivity">
         </activity>
         <activity android:name=".AddMoneyActivity">
         </activity>

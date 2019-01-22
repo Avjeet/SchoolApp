@@ -1,25 +1,22 @@
-package com.labs.daphnis.schoolapp
+package com.labs.daphnis.schoolapp.SchoolFees
 
 
-import android.app.ActivityOptions
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.text.Spannable
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.TextPaint
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
-import android.text.style.UnderlineSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import kotlinx.android.synthetic.main.fragment_school_location.*
+import com.labs.daphnis.schoolapp.R
 
 
 /**
@@ -73,7 +70,7 @@ class SchoolLocationFragment : Fragment() {
         emailTv.highlightColor = Color.TRANSPARENT
 
         proceedBtn?.setOnClickListener {
-            startActivity(Intent(activity,DetailActivity::class.java))
+            startActivity(Intent(activity, DetailActivity::class.java))
         }
         return view
     }

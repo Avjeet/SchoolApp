@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".PaymentSumaryActivity"
+        tools:context=".SchoolFees.PaymentSumaryActivity"
         tools:layout_editor_absoluteY="81dp">
 
     <TextView
@@ -108,7 +108,7 @@
                                         app:constraint_referenced_ids="fees,service_tax,textView9"
                                         tools:layout_editor_absoluteX="384dp"/>
     <TextView
-            android:text="$ 12,000"
+            android:text="₹ 12,000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_fees"
@@ -117,7 +117,7 @@
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintHorizontal_bias="0.75" android:textSize="16sp"/>
     <TextView
-            android:text="$ 50"
+            android:text="₹ 50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_service_tax"
@@ -132,7 +132,8 @@
             android:id="@+id/tv_int_handl_charge"
             app:layout_constraintTop_toBottomOf="@+id/tv_service_tax"
             app:layout_constraintBottom_toTopOf="@+id/view" app:layout_constraintStart_toStartOf="@+id/tv_fees"
-            android:text="$ 50" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            android:text="₹ 50"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
             android:textSize="16sp"/>
     <View android:layout_width="match_parent"
           android:layout_height="1dp"
@@ -172,7 +173,7 @@
           app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="16dp"
           app:layout_constraintVertical_bias="0.0"/>
     <TextView
-            android:text="$ 12,100"
+            android:text="₹ 12,100"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 

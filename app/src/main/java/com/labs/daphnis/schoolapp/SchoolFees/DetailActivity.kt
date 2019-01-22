@@ -1,13 +1,11 @@
-package com.labs.daphnis.schoolapp
+package com.labs.daphnis.schoolapp.SchoolFees
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.support.v4.app.NavUtils
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import com.labs.daphnis.schoolapp.R
 import kotlinx.android.synthetic.main.activity_detail.*
-import kotlinx.android.synthetic.main.activity_detail.view.*
 
 /**
  * Created by Your name on 18-01-2019.
@@ -32,7 +30,7 @@ class DetailActivity : AppCompatActivity() {
         edit_name.setText("Avjeet SIngh")
 
         proceed.setOnClickListener {
-            startActivity(Intent(this@DetailActivity,PaymentSumaryActivity::class.java))
+            startActivity(Intent(this@DetailActivity, PaymentSumaryActivity::class.java))
         }
 
     }

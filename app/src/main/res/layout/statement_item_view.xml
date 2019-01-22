@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingTop="@dimen/pad_top_item_stmnt"
+        android:paddingBottom="@dimen/pad_top_item_stmnt"
+        android:paddingStart="@dimen/pad_right_smnt"
+        android:paddingEnd="@dimen/pad_right_smnt">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/money_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile_01"
+            app:civ_border_color="@color/colorAccent"
+            android:layout_marginEnd="@dimen/length_10dp"/>
+
+    <LinearLayout
+            android:layout_toEndOf="@id/money_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                  android:textStyle="bold"
+                  android:id="@+id/stmnt_descr_text"
+                  android:text="Added account from: ICICI"
+                  android:textColor="@color/black"
+                  android:layout_marginBottom="@dimen/length_5dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="11:23 PM"
+                  android:id="@+id/stmnt_time"
+                  android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="+ $1000"
+              android:id="@+id/stmnt_trans"
+              android:textColor="@color/text_green"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+    />
+
+</RelativeLayout>
