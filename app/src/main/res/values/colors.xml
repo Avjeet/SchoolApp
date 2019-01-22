@@ -9,6 +9,7 @@
     <color name="text_blue">#2387d9</color>
     <color name="black">#000000</color>
     <color name="dark_grey">#bdbdbd</color>
+    <color name="dark_grey_text">#9e9e9e</color>
     <color name="grey_background">#eeeeee</color>
     <color name="blue_vlight">#e1f5fe</color>
     <color name="grid_sep_color_grey">#e5e5e5</color>

@@ -1,9 +1,11 @@
 package com.labs.daphnis.schoolapp.SchoolFees
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import com.labs.daphnis.schoolapp.R
+import kotlinx.android.synthetic.main.activity_payment_mode.*
 
 class PaymentModeActivity : AppCompatActivity() {
 
@@ -13,6 +15,10 @@ class PaymentModeActivity : AppCompatActivity() {
 
         supportActionBar?.title= getString(R.string.school_fees)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        image_pay.setOnClickListener{
+            startActivity(Intent(this@PaymentModeActivity,PaymentCompleteActivity::class.java))
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {

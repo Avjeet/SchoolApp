@@ -42,5 +42,13 @@
     <string name="student_queries">Student Queries</string>
     <string name="photo_gallery">Photo Gallery</string>
     <string name="view_statement">View Statement</string>
+    <string name="school_name">School Name</string>
+    <string name="enroll_no">Enroll No.</string>
+    <string name="student_s_name">Student\'s Name</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="amount">Amount</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="back_to_home">Back to Home</string>
 
 </resources>

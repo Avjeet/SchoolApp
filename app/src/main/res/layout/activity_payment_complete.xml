@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SchoolFees.PaymentCompleteActivity"
+        android:orientation="vertical">
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/fund_box_01"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/length_10dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Your payment was successful !"
+              android:textAppearance="@style/TextAppearance.AppCompat.Title"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="@dimen/length_20dp"/>
+
+    <View android:layout_width="match_parent" android:layout_height="@dimen/length_1dp"
+          android:background="@color/grid_sep_color_grey"
+          android:layout_marginTop="@dimen/length_30dp"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/length_20dp">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+        android:padding="@dimen/pad_payment_success">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="@string/school_name"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="JKG School"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                      android:textColor="@color/dark_grey_text"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/pad_payment_success">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="@string/student_s_name"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="Avjeet Singh"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                      android:textColor="@color/dark_grey_text"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/pad_payment_success">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="@string/enroll_no"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="JKG School"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                      android:textColor="@color/dark_grey_text"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/pad_payment_success">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="@string/date"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="22 Feb 2018"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                      android:textColor="@color/dark_grey_text"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/pad_payment_success">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="@string/time"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="09:30 am"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                      android:textColor="@color/dark_grey_text"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/pad_payment_success">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="@string/amount"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="Rs. 1323"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                      android:textColor="@color/dark_grey_text"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/pad_payment_success">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="@string/transaction_id"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="679wsgudi8q"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                      android:textColor="@color/dark_grey_text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_btn_blue_accent"
+            android:text="@string/back_to_home"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_margin="@dimen/length_20dp"/>
+
+
+</LinearLayout>

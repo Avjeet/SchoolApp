@@ -11,12 +11,14 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".SchoolFees.PaymentCompleteActivity">
+        </activity>
         <activity android:name=".ViewStatement.ViewStatementActivity">
         </activity>
         <activity
                 android:name=".HomeActivity"
-                android:theme="@style/AppTheme.NoActionBar"
-                android:screenOrientation="portrait">
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
