@@ -19,6 +19,8 @@ class PaymentModeActivity : AppCompatActivity() {
         image_pay.setOnClickListener{
             startActivity(Intent(this@PaymentModeActivity,PaymentCompleteActivity::class.java))
         }
+
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {

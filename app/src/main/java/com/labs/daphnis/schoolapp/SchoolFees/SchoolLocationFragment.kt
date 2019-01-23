@@ -4,6 +4,8 @@ package com.labs.daphnis.schoolapp.SchoolFees
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.os.LocaleList
+import android.support.design.widget.TextInputLayout
 import android.support.v4.app.Fragment
 import android.text.SpannableString
 import android.text.Spanned
@@ -14,9 +16,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.labs.daphnis.schoolapp.R
+import com.labs.daphnis.schoolapp.SchoolFees.SchoolLocationDir.LocationList
 
 
 /**
@@ -47,6 +51,8 @@ class SchoolLocationFragment : Fragment() {
 
         val emailTv = view.findViewById<TextView>(R.id.email_tv)
         val proceedBtn = view.findViewById<Button>(R.id.proceed)
+        val editLocation = view.findViewById<EditText>(R.id.edit_location)
+        val editSchool = view.findViewById<EditText>(R.id.edit_school)
 
 
         val ss = SpannableString(resources.getString(R.string.school_frg_text_email))
@@ -72,6 +78,11 @@ class SchoolLocationFragment : Fragment() {
         proceedBtn?.setOnClickListener {
             startActivity(Intent(activity, DetailActivity::class.java))
         }
+
+        editLocation.setOnClickListener {
+            startActivity(Intent(context, LocationList::class.java))
+        }
+
         return view
     }
 

@@ -4,24 +4,28 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               tools:context=".SchoolFees.SchoolLocationFragment"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:focusable="true"
+android:focusableInTouchMode="true">
 
     <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
 
         <EditText
                 android:id="@+id/edit_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/school_location"
-                android:inputType="textCapWords"
+                android:editable="false"
                 android:singleLine="true"
                 android:textSize="@dimen/font_20"
                 android:textColor="@color/black"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:layout_margin="20dp"/>
+                android:layout_margin="20dp"
+
+        />
 
     </android.support.design.widget.TextInputLayout>
 

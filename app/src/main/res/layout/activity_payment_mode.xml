@@ -63,8 +63,7 @@
                 android:layout_height="60dp"
                 android:src="@drawable/netflix_ad"
                 android:scaleType="centerCrop"
-                android:background="@drawable/rounded_back_blue"
-        >
+                android:background="@drawable/rounded_back_blue">
         </ImageView>
 
     </LinearLayout>
