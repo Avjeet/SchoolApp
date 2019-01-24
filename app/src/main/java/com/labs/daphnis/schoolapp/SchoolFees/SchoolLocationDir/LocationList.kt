@@ -20,12 +20,38 @@ class LocationList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_location_list)
 
-        nodes = ArrayList()
+        location_recycler_view.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         dataInit()
 
 
-        location_recycler_view.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+    }
+
+    private fun dataInit() {
+
+        nodes = ArrayList()
+        val parent1 = TreeNode(LocParent("All India"))
+        (nodes as ArrayList<TreeNode<LocParent>>).add(parent1)
+
+        for (i in 0 until 3) {
+            parent1.addChild(tcn("Delhi"))
+        }
+
+        val parent2 = TreeNode(LocParent("Andhra Pradesh"))
+        (nodes as ArrayList<TreeNode<LocParent>>).add(parent2)
+
+        for (i in 0 until 3) {
+            parent2.addChild(tcn("Dibugrah"))
+        }
+
+
+    }
+
+    private fun tcn(str: String): TreeNode<LocChild> {
+        return TreeNode(LocChild(str))
+    }
+
+    private fun applyLocationAdapter(){
         val adapter = TreeViewAdapter(nodes, arrayListOf(LocChildNodeBinder(), LocParentNodeBinder()))
         location_recycler_view.adapter = adapter
 
@@ -50,27 +76,5 @@ class LocationList : AppCompatActivity() {
             }
 
         })
-    }
-
-    private fun dataInit() {
-        val parent1 = TreeNode(LocParent("All India"))
-        (nodes as ArrayList<TreeNode<LocParent>>).add(parent1)
-
-        for (i in 0 until 3) {
-            parent1.addChild(tcn("Delhi"))
-        }
-
-        val parent2 = TreeNode(LocParent("Andhra Pradesh"))
-        (nodes as ArrayList<TreeNode<LocParent>>).add(parent2)
-
-        for (i in 0 until 3) {
-            parent2.addChild(tcn("Dibugrah"))
-        }
-
-
-    }
-
-    private fun tcn(str: String): TreeNode<LocChild> {
-        return TreeNode(LocChild(str))
     }
 }

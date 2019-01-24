@@ -11,6 +11,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".SchoolFees.SchoolLocationDir.SchoolSelect">
+        </activity>
         <activity android:name=".SchoolFees.SchoolLocationDir.LocationList">
         </activity>
         <activity android:name=".SchoolFees.PaymentCompleteActivity">

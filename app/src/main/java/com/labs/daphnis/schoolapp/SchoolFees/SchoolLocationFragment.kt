@@ -21,6 +21,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.labs.daphnis.schoolapp.R
 import com.labs.daphnis.schoolapp.SchoolFees.SchoolLocationDir.LocationList
+import com.labs.daphnis.schoolapp.SchoolFees.SchoolLocationDir.SchoolSelect
 
 
 /**
@@ -81,6 +82,10 @@ class SchoolLocationFragment : Fragment() {
 
         editLocation.setOnClickListener {
             startActivity(Intent(context, LocationList::class.java))
+        }
+
+        editSchool.setOnClickListener {
+            startActivity(Intent(context, SchoolSelect::class.java))
         }
 
         return view

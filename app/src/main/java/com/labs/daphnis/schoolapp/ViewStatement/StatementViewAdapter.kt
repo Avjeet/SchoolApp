@@ -27,7 +27,7 @@ class StatementViewAdapter(val context : Context?): RecyclerView.Adapter<Stateme
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return 5
     }
 
     override fun onBindViewHolder(vh: StatementViewHolder, position: Int) {
