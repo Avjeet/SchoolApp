@@ -1,5 +1,8 @@
 package com.labs.daphnis.schoolapp.SchoolFees.SchoolLocationDir
 
+import android.app.Activity
+import android.content.Intent
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
@@ -14,6 +17,23 @@ class SchoolSelect : AppCompatActivity() {
 
         school_select_recycler.layoutManager = GridLayoutManager(this,2,GridLayoutManager.VERTICAL,false)
 
-        school_select_recycler.adapter = SchoolSelectAdapter(this)
+        val adapter = SchoolSelectAdapter(this)
+
+       adapter.setOnCardClickListener(object : OnCardClickListener {
+           override fun onClick(schoolName: String) {
+               setResultData(schoolName)
+           }
+
+       })
+
+        school_select_recycler.adapter = adapter
+
+
+    }
+    private fun setResultData(str : String){
+        val intent = Intent()
+        intent.data = Uri.parse(str)
+        setResult(Activity.RESULT_OK,intent)
+        finish()
     }
 }

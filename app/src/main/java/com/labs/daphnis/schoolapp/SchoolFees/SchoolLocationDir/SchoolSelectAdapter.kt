@@ -8,13 +8,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.labs.daphnis.schoolapp.R
+import kotlinx.android.synthetic.main.school_select_card.view.*
 
 
 /**
  * Created by Avjeet on 22-01-2019.
  */
-class SchoolSelectAdapter(val context : Context?): RecyclerView.Adapter<SchoolSelectViewHolder>() {
+class SchoolSelectAdapter(val context: Context?) : RecyclerView.Adapter<SchoolSelectViewHolder>() {
 
+    private lateinit var onCardClickListener: OnCardClickListener
 
 
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): SchoolSelectViewHolder {
@@ -40,9 +42,9 @@ class SchoolSelectAdapter(val context : Context?): RecyclerView.Adapter<SchoolSe
 
         (context as Activity).windowManager.defaultDisplay.getMetrics(displaymetrics)
 
-        val width =  (parent.width-100) / 2
+        val width = (parent.width - 100) / 2
 
-        val height = (parent.height-40) / 3
+        val height = (parent.height - 40) / 3
 
         view.layoutParams.width = width
 
@@ -56,10 +58,22 @@ class SchoolSelectAdapter(val context : Context?): RecyclerView.Adapter<SchoolSe
     }
 
     override fun onBindViewHolder(vh: SchoolSelectViewHolder, position: Int) {
-      //
+        vh.schoolName.text = "GNPS School"
+        vh.cardView.setOnClickListener{
+            onCardClickListener.onClick(vh.schoolName.text.toString())
+        }
+    }
+
+    fun setOnCardClickListener(listener: OnCardClickListener){
+        this.onCardClickListener = listener
     }
 }
 
 class SchoolSelectViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-   //
+    val schoolName = itemView.school_card_name
+    val cardView = itemView.school_card
+}
+
+interface OnCardClickListener {
+    fun onClick(schoolName : String)
 }

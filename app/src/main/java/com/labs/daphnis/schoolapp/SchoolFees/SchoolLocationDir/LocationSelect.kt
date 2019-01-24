@@ -1,29 +1,32 @@
 package com.labs.daphnis.schoolapp.SchoolFees.SchoolLocationDir
 
-import android.opengl.Visibility
+import android.app.Activity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import com.labs.daphnis.schoolapp.R
-import kotlinx.android.synthetic.main.activity_location_list.*
+import kotlinx.android.synthetic.main.activity_location_select.*
 import tellh.com.recyclertreeview_lib.TreeNode
 import tellh.com.recyclertreeview_lib.TreeViewAdapter
 
 
-class LocationList : AppCompatActivity() {
+class LocationSelect : AppCompatActivity() {
 
     private lateinit var nodes: List<TreeNode<LocParent>>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_location_list)
+        setContentView(R.layout.activity_location_select)
 
         location_recycler_view.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         dataInit()
 
+        applyLocationAdapter()
 
     }
 
@@ -61,6 +64,10 @@ class LocationList : AppCompatActivity() {
                 if (!(node?.isLeaf)!!) {
                     //Update and toggle the node.
                     onToggle(!node.isExpand, holder)
+                }else{
+                    val locationChild = (node.content as LocChild).cLocName
+                    val locationParent = (node.parent.content as LocParent).pLocName
+                    setResultData("${locationChild}, ${locationParent}")
                 }
                 return false
             }
@@ -76,5 +83,12 @@ class LocationList : AppCompatActivity() {
             }
 
         })
+    }
+
+    private fun setResultData(str : String){
+        val intent = Intent()
+        intent.data = Uri.parse(str)
+        setResult(Activity.RESULT_OK,intent)
+        finish()
     }
 }

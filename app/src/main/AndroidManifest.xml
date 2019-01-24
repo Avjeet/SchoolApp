@@ -13,7 +13,7 @@
             tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".SchoolFees.SchoolLocationDir.SchoolSelect">
         </activity>
-        <activity android:name=".SchoolFees.SchoolLocationDir.LocationList">
+        <activity android:name=".SchoolFees.SchoolLocationDir.LocationSelect">
         </activity>
         <activity android:name=".SchoolFees.PaymentCompleteActivity">
         </activity>
