@@ -20,18 +20,6 @@ class SchoolSelectAdapter(val context: Context?) : RecyclerView.Adapter<SchoolSe
 
 
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): SchoolSelectViewHolder {
-//        val displaymetrics = DisplayMetrics()
-//        (context as Activity).windowManager.defaultDisplay.getMetrics(displaymetrics)
-//        //if you need three fix imageview in width
-//        val devicewidth = displaymetrics.widthPixels / 3
-//
-//        //if you need 4-5-6 anything fix imageview in height
-//        val deviceheight = displaymetrics.heightPixels / 4
-//
-//        holder.image_view.getLayoutParams().width = devicewidth
-//
-//        //if you need same height as width you can set devicewidth in holder.image_view.getLayoutParams().height
-//        holder.image_view.getLayoutParams().height = deviceheight
 
         val view = LayoutInflater.from(context).inflate(
             R.layout.school_select_card,

@@ -19,6 +19,18 @@ class PaymentSumaryActivity : AppCompatActivity() {
         proceed.setOnClickListener {
             startActivity(Intent(this@PaymentSumaryActivity, PaymentModeActivity::class.java))
         }
+
+        promocode_link.setOnClickListener{
+            val transaction = supportFragmentManager.beginTransaction()
+
+            val fragment = PromoCodeFragment.newInstance()
+
+            transaction.add(R.id.promo_fragment_container,fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
@@ -29,5 +41,9 @@ class PaymentSumaryActivity : AppCompatActivity() {
             }
             else -> return super.onOptionsItemSelected(item)
         }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".SchoolFees.PromoCodeFragment"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/promocode_left_padding">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:textAppearance="@style/TextAppearance.AppCompat.Title"
+              android:text="@string/enter_promo_code"
+              android:textColor="@color/colorAccent"
+              android:paddingTop="@dimen/promocode_left_padding"
+              android:paddingBottom="@dimen/promocode_left_padding"/>
+
+    <View android:layout_width="match_parent" android:layout_height="@dimen/length_1dp"
+          android:background="@color/grid_sep_color_grey"/>
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/promo_recycler" android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

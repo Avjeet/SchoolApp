@@ -20,5 +20,6 @@
     <dimen name="pad_top_item_stmnt">20dp</dimen>
     <dimen name="pad_right_smnt">10dp</dimen>
     <dimen name="pad_payment_success">10dp</dimen>
+    <dimen name="promocode_left_padding">20dp</dimen>
 
 </resources>

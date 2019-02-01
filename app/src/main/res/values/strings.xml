@@ -51,5 +51,6 @@
     <string name="transaction_id">Transaction ID</string>
     <string name="back_to_home">Back to Home</string>
     <string name="current_location">Current Location</string>
+    <string name="enter_promo_code">Enter Promo Code</string>
 
 </resources>

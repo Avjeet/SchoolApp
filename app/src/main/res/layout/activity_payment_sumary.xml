@@ -152,10 +152,11 @@
             app:layout_constraintTop_toTopOf="@+id/guideline3"
             app:layout_constraintStart_toStartOf="@+id/fees" android:textSize="16sp"/>
     <TextView
+
             android:text="Have a Promocode ?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView14"
+            android:id="@+id/promocode_link"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -192,5 +193,9 @@
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="10dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="10dp"
             app:layout_constraintEnd_toEndOf="parent"/>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/promo_fragment_container"
+    android:elevation="@dimen/length_20dp"/>
 
 </android.support.constraint.ConstraintLayout>
