@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        tools:context=".Activity.AttendanceActivity"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/length_20dp"
+            android:paddingBottom="@dimen/length_40dp"
+            android:paddingLeft="@dimen/length_20dp"
+            android:paddingRight="@dimen/length_20dp"
+            android:background="@color/colorPrimary">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:id="@+id/atten_text_ll"
+                      android:layout_marginEnd="@dimen/length_20dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Month    :   April 2018"
+                    android:layout_marginBottom="@dimen/atten_mar_text_bottom"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present  :   25 days"
+                    android:layout_marginBottom="@dimen/atten_mar_text_bottom"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absent   :   01 days"
+                    android:layout_marginBottom="@dimen/atten_mar_text_bottom"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Month    :   April 2018"
+                    android:layout_marginBottom="@dimen/atten_mar_text_bottom"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"/>
+
+
+        </LinearLayout>
+
+        <devlight.io.library.ArcProgressStackView
+                android:layout_marginStart="@dimen/length_10dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/progress_stack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/atten_text_ll"
+                app:apsv_start_angle="270"
+                app:apsv_shadow_distance="5dp"
+                app:apsv_shadow_angle="90"
+                app:apsv_shadow_radius="3dp"
+                app:apsv_shadow_color="#000"
+                android:layout_alignBottom="@id/atten_text_ll"
+                android:layout_alignTop="@id/atten_text_ll"
+                app:apsv_animated="true"
+                app:apsv_typeface="fonts/agency.ttf"
+                app:apsv_interpolator="@android:interpolator/accelerate_decelerate"
+        />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/attendance_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-20dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

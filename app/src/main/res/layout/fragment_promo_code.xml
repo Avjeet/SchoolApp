@@ -6,7 +6,7 @@
               tools:context=".SchoolFees.PromoCodeFragment"
               android:background="@color/white"
               android:orientation="vertical"
-              android:paddingLeft="@dimen/promocode_left_padding">
+              android:paddingStart="@dimen/promocode_left_padding">
 
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
               android:textAppearance="@style/TextAppearance.AppCompat.Title"

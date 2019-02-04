@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="15dp"
+                                    android:layout_margin="10dp">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="@dimen/length_10dp"
+            android:paddingRight="@dimen/length_20dp"
+            android:paddingBottom="@dimen/length_20dp"
+            android:background="@color/white">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Physics"
+                  android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+        <TextView
+                android:id="@+id/atten_item_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_alignParentEnd="true"/>
+
+        <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/seek_bar_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:isb_user_seekable="false"
+                android:clickable="false"
+                app:isb_progress="70"
+                app:isb_clear_default_padding="true"
+                app:isb_track_progress_color="@color/colorAccent"
+                app:isb_thumb_color="@android:color/transparent"
+                app:isb_show_indicator="rectangle"
+                android:layout_below="@id/atten_item_percent"/>
+        <LinearLayout
+                android:layout_below="@id/seek_bar_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="P : 00"
+                      android:layout_marginRight="@dimen/length_10dp"
+                      android:textSize="@dimen/atten_font_size"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="A : 00"
+                      android:layout_marginRight="@dimen/length_10dp"
+                      android:textSize="@dimen/atten_font_size"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="L : 00"
+                      android:textSize="@dimen/atten_font_size"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

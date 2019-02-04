@@ -21,5 +21,8 @@
     <dimen name="pad_right_smnt">10dp</dimen>
     <dimen name="pad_payment_success">10dp</dimen>
     <dimen name="promocode_left_padding">20dp</dimen>
+    <dimen name="atten_mar_text_bottom">5dp</dimen>
+    <dimen name="length_60dp">60dp</dimen>
+    <dimen name="atten_font_size">12sp</dimen>
 
 </resources>

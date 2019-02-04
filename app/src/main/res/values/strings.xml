@@ -36,7 +36,6 @@
     <string name="search_ntutors">Search\nTutors</string>
     <string name="your_fund_box_balance">Your fund box balance</string>
     <string name="dashboard">Dashboard</string>
-    <string name="attendance">Attendance</string>
     <string name="blog">Blog</string>
     <string name="chapter_wise_revision">Chapter Wise Revision</string>
     <string name="student_queries">Student Queries</string>
@@ -52,5 +51,6 @@
     <string name="back_to_home">Back to Home</string>
     <string name="current_location">Current Location</string>
     <string name="enter_promo_code">Enter Promo Code</string>
+    <string name="attendance">Attendance</string>
 
 </resources>
