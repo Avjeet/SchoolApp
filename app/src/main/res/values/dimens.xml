@@ -24,5 +24,6 @@
     <dimen name="atten_mar_text_bottom">5dp</dimen>
     <dimen name="length_60dp">60dp</dimen>
     <dimen name="atten_font_size">12sp</dimen>
+    <dimen name="blog_title_margin">10dp</dimen>
 
 </resources>

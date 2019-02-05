@@ -7,7 +7,6 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.MenuItem
 import com.labs.daphnis.schoolapp.R
 import kotlinx.android.synthetic.main.activity_attedance.*
-import android.graphics.Color.parseColor
 import devlight.io.library.ArcProgressStackView
 
 

@@ -38,6 +38,7 @@ class SchoolSelectAdapter(val context: Context?) : RecyclerView.Adapter<SchoolSe
 
         view.layoutParams.height = height
 
+
         return SchoolSelectViewHolder(view)
     }
 

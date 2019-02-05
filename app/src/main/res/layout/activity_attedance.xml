@@ -66,8 +66,7 @@
                 android:layout_alignTop="@id/atten_text_ll"
                 app:apsv_animated="true"
                 app:apsv_typeface="fonts/agency.ttf"
-                app:apsv_interpolator="@android:interpolator/accelerate_decelerate"
-        />
+                app:apsv_interpolator="@android:interpolator/accelerate_decelerate"/>
 
     </RelativeLayout>
 

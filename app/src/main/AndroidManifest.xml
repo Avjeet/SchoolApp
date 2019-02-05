@@ -11,6 +11,10 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activity.PhotoGalleryActivity">
+        </activity>
+        <activity android:name=".Activity.BlogActivity">
+        </activity>
         <activity android:name=".Activity.AttendanceActivity">
         </activity>
         <activity android:name=".SchoolFees.PromoCodeActivity">

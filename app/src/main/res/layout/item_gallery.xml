@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.labs.daphnis.schoolapp.Util.SquareImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gallery_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blg_image"
+        android:scaleType="fitXY">
+
+</com.labs.daphnis.schoolapp.Util.SquareImageView>

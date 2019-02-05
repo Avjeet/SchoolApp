@@ -10,14 +10,14 @@ import com.labs.daphnis.schoolapp.R
 /**
  * Created by Avjeet on 22-01-2019.
  */
-class AttendanceAdapter(val context : Context?): RecyclerView.Adapter<PhotoViewHolder>() {
+class BlogAdapter(val context : Context?): RecyclerView.Adapter<BlogViewHolder>() {
 
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, position: Int): PhotoViewHolder {
-        return PhotoViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, position: Int): BlogViewHolder {
+        return BlogViewHolder(
             LayoutInflater.from(context).inflate(
-                R.layout.item_attendance,
+                R.layout.item_blog,
                 parent,
                 false
             )
@@ -28,11 +28,11 @@ class AttendanceAdapter(val context : Context?): RecyclerView.Adapter<PhotoViewH
         return 5
     }
 
-    override fun onBindViewHolder(vh: PhotoViewHolder, position: Int) {
+    override fun onBindViewHolder(vh: BlogViewHolder, position: Int) {
 
     }
 }
 
-class AttendanceViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class BlogViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
   //
 }

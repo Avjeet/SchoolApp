@@ -2,11 +2,11 @@
 
 <android.support.v7.widget.CardView
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
-android:layout_margin="@dimen/length_10dp"
-android:id="@+id/school_card">
+        android:layout_margin="@dimen/length_10dp"
+        android:id="@+id/school_card">
 
 
     <LinearLayout
@@ -31,11 +31,11 @@ android:id="@+id/school_card">
         <TextView
                 android:id="@+id/school_card_name"
                 android:layout_width="match_parent"
-                  android:layout_height="0dp"
-                  android:layout_weight="1"
-                  android:text="JKG School"
-                  android:gravity="center_horizontal"
-                  android:layout_margin="@dimen/length_30dp"/>
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="JKG School"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/length_30dp"/>
 
 
     </LinearLayout>

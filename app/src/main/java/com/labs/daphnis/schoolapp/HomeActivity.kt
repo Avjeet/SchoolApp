@@ -10,6 +10,9 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import com.labs.daphnis.schoolapp.Activity.AttendanceActivity
+import com.labs.daphnis.schoolapp.Activity.BlogActivity
+import com.labs.daphnis.schoolapp.Activity.PhotoAdapter
+import com.labs.daphnis.schoolapp.Activity.PhotoGalleryActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar_home.*
 
@@ -95,7 +98,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             R.id.nav_blog -> {
-                Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this@HomeActivity,BlogActivity::class.java))
             }
 
             R.id.nav_revision -> {
@@ -107,7 +110,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             R.id.nav_gallery -> {
-                Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this@HomeActivity,PhotoGalleryActivity::class.java))
             }
 
             R.id.nav_result -> {
