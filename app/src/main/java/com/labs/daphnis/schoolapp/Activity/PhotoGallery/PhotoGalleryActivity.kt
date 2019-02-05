@@ -1,4 +1,4 @@
-package com.labs.daphnis.schoolapp.Activity
+package com.labs.daphnis.schoolapp.Activity.PhotoGallery
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -18,14 +18,18 @@ class PhotoGalleryActivity : AppCompatActivity() {
         val fragment = PhotoGridFragment()
         supportFragmentManager.beginTransaction()
             .add(R.id.gallery_container,fragment)
-            .addToBackStack(null)
             .commit()
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item?.itemId) {
             android.R.id.home -> {
-                finish()
+
+                if(supportFragmentManager.backStackEntryCount==0){
+                    finish()
+                }else{
+                    onBackPressed()
+                }
                 return true
             }
             else -> return super.onOptionsItemSelected(item)

@@ -16,6 +16,11 @@
                 android:id="@+id/nav_blog"
                 android:icon="@drawable/ic_menu_slideshow"
                 android:title="@string/blog"/>
+
+        <item
+                android:id="@+id/nav_time_table"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/time_table"/>
         <item
                 android:id="@+id/nav_revision"
                 android:icon="@drawable/ic_menu_manage"

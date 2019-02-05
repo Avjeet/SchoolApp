@@ -5,19 +5,23 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@mipmap/ic_launcher_logo"
             android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:roundIcon="@mipmap/ic_launcher_logo_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Activity.PhotoGalleryActivity">
+        <activity android:name=".Activity.TimeTable.TimeTableActivity">
         </activity>
-        <activity android:name=".Activity.BlogActivity">
+        <activity
+                android:name=".Activity.PhotoGallery.PhotoGalleryActivity"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Activity.AttendanceActivity">
+        <activity android:name=".Activity.BlogActivity.BlogActivity">
         </activity>
-        <activity android:name=".SchoolFees.PromoCodeActivity">
+        <activity
+                android:name=".Activity.AttendanceActivity.AttendanceActivity"
+                android:screenOrientation="portrait">
         </activity>
         <activity android:name=".SchoolFees.SchoolLocationDir.SchoolSelect">
         </activity>

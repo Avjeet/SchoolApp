@@ -9,10 +9,10 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import com.labs.daphnis.schoolapp.Activity.AttendanceActivity
-import com.labs.daphnis.schoolapp.Activity.BlogActivity
-import com.labs.daphnis.schoolapp.Activity.PhotoAdapter
-import com.labs.daphnis.schoolapp.Activity.PhotoGalleryActivity
+import com.labs.daphnis.schoolapp.Activity.AttendanceActivity.AttendanceActivity
+import com.labs.daphnis.schoolapp.Activity.BlogActivity.BlogActivity
+import com.labs.daphnis.schoolapp.Activity.PhotoGallery.PhotoGalleryActivity
+import com.labs.daphnis.schoolapp.Activity.TimeTable.TimeTableActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar_home.*
 
@@ -94,11 +94,16 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             R.id.nav_Attendance -> {
-                startActivity(Intent(this@HomeActivity,AttendanceActivity::class.java))
+                startActivity(Intent(this@HomeActivity,
+                    AttendanceActivity::class.java))
             }
 
             R.id.nav_blog -> {
-                startActivity(Intent(this@HomeActivity,BlogActivity::class.java))
+                startActivity(Intent(this@HomeActivity, BlogActivity::class.java))
+            }
+
+            R.id.nav_time_table ->{
+                startActivity(Intent(this@HomeActivity,TimeTableActivity::class.java))
             }
 
             R.id.nav_revision -> {
@@ -110,7 +115,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             R.id.nav_gallery -> {
-                startActivity(Intent(this@HomeActivity,PhotoGalleryActivity::class.java))
+                startActivity(Intent(this@HomeActivity, PhotoGalleryActivity::class.java))
             }
 
             R.id.nav_result -> {

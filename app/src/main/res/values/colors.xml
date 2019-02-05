@@ -13,4 +13,8 @@
     <color name="grey_background">#eeeeee</color>
     <color name="blue_vlight">#e1f5fe</color>
     <color name="grid_sep_color_grey">#e5e5e5</color>
+    <color name="grey">#989898</color>
+    <color name="darkGrey">#6f6f6f</color>
+    <color name="green">#38bf7c</color>
+    <color name="red">#af6154</color>
 </resources>

@@ -1,4 +1,4 @@
-package com.labs.daphnis.schoolapp.Activity
+package com.labs.daphnis.schoolapp.Activity.AttendanceActivity
 
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
@@ -25,7 +25,8 @@ class AttendanceActivity : AppCompatActivity() {
 
         attendance_recycler_view.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
 
-        attendance_recycler_view.adapter =  AttendanceAdapter(this)
+        attendance_recycler_view.adapter =
+                AttendanceAdapter(this)
 
 
        progressInit()

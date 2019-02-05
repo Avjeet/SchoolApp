@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">School App</string>
+    <string name="app_name">IViewSmart</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -52,5 +52,7 @@
     <string name="current_location">Current Location</string>
     <string name="enter_promo_code">Enter Promo Code</string>
     <string name="attendance">Attendance</string>
+    <string name="time_table">Time Table</string>
+    <string name="enter_message">Enter Message</string>
 
 </resources>

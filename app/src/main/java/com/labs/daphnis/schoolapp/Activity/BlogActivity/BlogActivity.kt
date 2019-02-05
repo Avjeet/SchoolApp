@@ -1,4 +1,4 @@
-package com.labs.daphnis.schoolapp.Activity
+package com.labs.daphnis.schoolapp.Activity.BlogActivity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -20,7 +20,7 @@ class BlogActivity : AppCompatActivity() {
 
         blog_recycler_view.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
 
-       blog_recycler_view.adapter =  BlogAdapter(this)
+       blog_recycler_view.adapter = BlogAdapter(this)
     }
 
 

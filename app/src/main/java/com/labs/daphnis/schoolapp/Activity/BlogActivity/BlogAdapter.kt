@@ -1,4 +1,4 @@
-package com.labs.daphnis.schoolapp.Activity
+package com.labs.daphnis.schoolapp.Activity.BlogActivity
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView

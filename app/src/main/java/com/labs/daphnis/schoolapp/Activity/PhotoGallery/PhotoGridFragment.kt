@@ -1,10 +1,10 @@
-package com.labs.daphnis.schoolapp.Activity
+package com.labs.daphnis.schoolapp.Activity.PhotoGallery
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,7 +29,23 @@ class PhotoGridFragment : Fragment() {
 
         view.photo_recycler_view?.layoutManager = GridLayoutManager(context,3,GridLayoutManager.VERTICAL,false)
 
-        view.photo_recycler_view?.adapter = PhotoAdapter(context)
+
+
+        val adapter = PhotoAdapter(context)
+
+        adapter.setOnImageClickListener(object : OnImageClickListener {
+            override fun onClick(imageId: Int) {
+                activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.add(R.id.gallery_container,PhotoFullScreen.newInstance(imageId))
+                    ?.addToBackStack(null)
+                    ?.commit()
+            }
+        })
+
+        view.photo_recycler_view?.adapter = adapter
+
+
 
         return view
     }
