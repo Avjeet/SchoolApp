@@ -1,18 +1,13 @@
 package com.labs.daphnis.schoolapp
 
-import android.content.Intent
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
-import com.labs.daphnis.schoolapp.Activity.AttendanceActivity.AttendanceActivity
-import com.labs.daphnis.schoolapp.Activity.BlogActivity.BlogActivity
-import com.labs.daphnis.schoolapp.Activity.PhotoGallery.PhotoGalleryActivity
-import com.labs.daphnis.schoolapp.Activity.TimeTable.TimeTableActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar_home.*
 
@@ -31,33 +26,8 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val toggle = ActionBarDrawerToggle(
             this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
         )
-        //toggle.drawerArrowDrawable.color = ContextCompat.getColor(this,R.color.white)
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
-
-        val fragment = DashboardFragment()
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-
-        fragmentTransaction.add(R.id.content_ll, fragment)
-        fragmentTransaction.commit()
-
-
-
-        bottom_nav.setOnNavigationItemSelectedListener { p0 ->
-            when (p0.itemId) {
-                R.id.nav_home -> Toast.makeText(this@HomeActivity, "${p0.title}", Toast.LENGTH_SHORT).show()
-
-                R.id.nav_profile -> Toast.makeText(this@HomeActivity, "${p0.title}", Toast.LENGTH_SHORT).show()
-
-                R.id.nav_fund_box -> Toast.makeText(this@HomeActivity, "${p0.title}", Toast.LENGTH_SHORT).show()
-
-                R.id.nav_commerce -> Toast.makeText(this@HomeActivity, "${p0.title}", Toast.LENGTH_SHORT).show()
-            }
-            true
-        }
-
-
 
         nav_view.setNavigationItemSelectedListener(this)
     }
@@ -81,58 +51,35 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         when (item.itemId) {
-            R.id.action_notification -> return true
+            R.id.action_settings -> return true
             else -> return super.onOptionsItemSelected(item)
         }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-
+        // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_dashboard -> {
-                Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
+            R.id.nav_camera -> {
+                // Handle the camera action
             }
-
-            R.id.nav_Attendance -> {
-                startActivity(Intent(this@HomeActivity,
-                    AttendanceActivity::class.java))
-            }
-
-            R.id.nav_blog -> {
-                startActivity(Intent(this@HomeActivity, BlogActivity::class.java))
-            }
-
-            R.id.nav_time_table ->{
-                startActivity(Intent(this@HomeActivity,TimeTableActivity::class.java))
-            }
-
-            R.id.nav_revision -> {
-                Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
-            }
-
-            R.id.nav_queries -> {
-                Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
-            }
-
             R.id.nav_gallery -> {
-                startActivity(Intent(this@HomeActivity, PhotoGalleryActivity::class.java))
-            }
 
-            R.id.nav_result -> {
-                Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
             }
+            R.id.nav_slideshow -> {
 
-            R.id.nav_Other -> {
-                Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
+            }
+            R.id.nav_manage -> {
+
+            }
+            R.id.nav_share -> {
+
+            }
+            R.id.nav_send -> {
+
             }
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
-    }
-
-    override fun onResume() {
-        super.onResume()
-        nav_view.setCheckedItem(R.id.nav_dashboard)
     }
 }

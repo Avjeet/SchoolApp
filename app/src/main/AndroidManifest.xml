@@ -1,56 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
           package="com.labs.daphnis.schoolapp">
 
     <application
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher_logo"
+            android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_logo_round"
+            android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme"
-            tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Activity.TimeTable.TimeTableActivity">
-        </activity>
-        <activity
-                android:name=".Activity.PhotoGallery.PhotoGalleryActivity"
-                android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".Activity.BlogActivity.BlogActivity">
-        </activity>
-        <activity
-                android:name=".Activity.AttendanceActivity.AttendanceActivity"
-                android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".SchoolFees.SchoolLocationDir.SchoolSelect">
-        </activity>
-        <activity android:name=".SchoolFees.SchoolLocationDir.LocationSelect">
-        </activity>
-        <activity android:name=".SchoolFees.PaymentCompleteActivity">
-        </activity>
-        <activity android:name=".ViewStatement.ViewStatementActivity">
-        </activity>
-        <activity
-                android:name=".HomeActivity"
-                android:screenOrientation="portrait"
-                android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".SchoolFees.SchoolFeesActivity">
-        </activity>
         <activity
-                android:name=".SchoolFees.DetailActivity"
-                android:parentActivityName=".SchoolFees.SchoolFeesActivity"/>
-        <activity android:name=".SchoolFees.PaymentSumaryActivity">
-        </activity>
-        <activity android:name=".SchoolFees.PaymentModeActivity">
-        </activity>
-        <activity android:name=".AddMoneyActivity">
+                android:name=".HomeActivity"
+                android:label="@string/title_activity_home"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

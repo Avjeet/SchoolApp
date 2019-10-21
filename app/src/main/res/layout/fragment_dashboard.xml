@@ -133,7 +133,7 @@
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
 
-    <com.labs.daphnis.schoolapp.Util.DividerGridLayout
+    <com.labs.daphnis.iviewsmart.Util.DividerGridLayout
             android:id="@+id/grid_btn"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -337,7 +337,7 @@
         </LinearLayout>
 
 
-    </com.labs.daphnis.schoolapp.Util.DividerGridLayout>
+    </com.labs.daphnis.iviewsmart.Util.DividerGridLayout>
     <View android:layout_width="match_parent" android:layout_height="@dimen/length_1dp"
     android:background="@color/grid_sep_color_grey"/>
 
